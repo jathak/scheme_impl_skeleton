@@ -1,0 +1,13 @@
+name: cs61a_scheme_impl
+description: Implementation of missing parts of dart_scheme interpreter (skeleton)
+publish_to: none
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+
+dependencies:
+  cs61a_scheme:
+    path: ../dart_scheme
+
+executables:
+    dart-scheme: main
