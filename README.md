@@ -32,3 +32,4 @@ language from Python to Dart. This applies even if you are not currently taking
 [dart_scheme]: https://github.com/Cal-CS-61A-Staff/dart_scheme
 [scheme_web_interpreter]: https://github.com/Cal-CS-61A-Staff/scheme_web_interpreter
 [project]: http://fa17.cs61a.org
+[policy]: https://cs61a.org/articles/about.html
