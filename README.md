@@ -24,6 +24,8 @@ I've included the UnimplementedAsync mixin by default, since define-async and
 lambda-async are not commonly used. If you want them (effectively, async/await
 in Scheme), see the methods of `ProjectInterface` in the main repo.
 
+The [Scheme project spec][] from last semester may be helpful.
+
 While I'm licensing this under the BSD 3-clause license to maintain consistency
 with the rest of the project, I ask that you please do not publicly distribute
 the *source code* that you implement here (dart2js builds are fine). We reuse
@@ -61,7 +63,7 @@ project, which in turn mostly came from the original SICP textbook.
 
 [dart_scheme]: https://github.com/Cal-CS-61A-Staff/dart_scheme
 [scheme_web_interpreter]: https://github.com/Cal-CS-61A-Staff/scheme_web_interpreter
-[project]: http://fa17.cs61a.org
+[Scheme project spec]: http://fa17.cs61a.org/proj/scheme
 [policy]: https://cs61a.org/articles/about.html
 [email]: mailto:jthakar@berkeley.edu
 [Twitter]: https://twitter.com/jathak
