@@ -18,7 +18,8 @@ formatActual(actual) {
 testScmFile(String filename) async {
   int testCount = 0;
   int failedCount = 0;
-  String contents = await new File("test/" + filename).readAsString();
+  String path = Platform.script.resolve(filename).toFilePath();
+  String contents = await new File(path).readAsString();
   List<String> lines = contents.split("\n");
   String log = "";
   List<String> run = [];
