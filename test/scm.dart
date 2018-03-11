@@ -76,8 +76,10 @@ testScmFile(String filename) async {
   }
   if (failedCount == 0) {
     print("Passed all $testCount tests in $filename");
+    exit(0);
   } else {
     print("Failed $failedCount/$testCount tests in $filename");
+    exit(1);
   }
 }
 
