@@ -3,7 +3,8 @@ library cs61a_scheme_impl;
 import 'package:cs61a_scheme/cs61a_scheme.dart';
 import 'package:cs61a_scheme/cs61a_scheme_extra.dart';
 
-class StaffProjectImplementation extends ProjectInterface with UnimplementedAsync {
+class StaffProjectImplementation extends ProjectInterface
+    with UnimplementedAsync {
   Expression read(List<Expression> tokens) {
     // ignore: unused_element
     Expression tail() {
@@ -17,22 +18,23 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
       }
       return null;
     }
+
     Expression token = tokens.removeAt(0);
     if (token is! SchemeSymbol) return token;
     String value = (token as SchemeSymbol).value;
     switch (value) {
       case "'":
-        // TODO: Implementation required; mirrors Problem 7 of project
+      // TODO: Implementation required; mirrors Problem 7 of project
       case '#':
         throw new SchemeException("Vectors not yet implemented.");
       case '`':
-        // TODO: Implementation required
+      // TODO: Implementation required
       case ',':
-        // TODO: Implementation required
+      // TODO: Implementation required
       case ',@':
-        // TODO: Implementation required
+      // TODO: Implementation required
       case '(':
-        // TODO: Implementation required; mirrors Problem 1 of project
+      // TODO: Implementation required; mirrors Problem 1 of project
       default:
         if (value == '.') {
           throw new SchemeException("Unexpected token: $value");
@@ -52,7 +54,8 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
   }
 
   // Analagous to PrimitiveProcedure.apply in Problem 4
-  Expression primitiveApply(PrimitiveProcedure proc, PairOrEmpty args, Frame env) {
+  Expression primitiveApply(
+      PrimitiveProcedure proc, PairOrEmpty args, Frame env) {
     // TODO: Implementation required; mirrors Problem 4 of project
     return null; // replace
   }
@@ -64,7 +67,8 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
   }
 
   // Analagous to Procedure.eval_call in Problem 5
-  Expression procedureCall(Procedure procedure, PairOrEmpty operands, Frame env) {
+  Expression procedureCall(
+      Procedure procedure, PairOrEmpty operands, Frame env) {
     // TODO: Implementation required; mirrors Problem 5 of project
     return null; // replace
   }
@@ -115,7 +119,8 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
   }
 
   // Analagous to LambdaProcedure.make_call_frame in Problem 12
-  Frame makeLambdaFrame(LambdaProcedure procedure, PairOrEmpty args, Frame env) {
+  Frame makeLambdaFrame(
+      LambdaProcedure procedure, PairOrEmpty args, Frame env) {
     // TODO: Implementation required; mirrors Problem 12 of project
     return null; // replace
   }
@@ -196,7 +201,8 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
   }
 
   // We're no longer using this EC problem, so I've included the code
-  Expression continuationApply(Continuation continuation, PairOrEmpty args, Frame env) {
+  Expression continuationApply(
+      Continuation continuation, PairOrEmpty args, Frame env) {
     if (args.length != 1) {
       throw new SchemeException("Continuation takes a single argument");
     }
@@ -205,7 +211,8 @@ class StaffProjectImplementation extends ProjectInterface with UnimplementedAsyn
   }
 
   // Analagous to MacroProcedure.eval_call in Macros EC problem
-  Expression macroCall(MacroProcedure procedure, PairOrEmpty operands, Frame env) {
+  Expression macroCall(
+      MacroProcedure procedure, PairOrEmpty operands, Frame env) {
     // TODO: Implementation required; mirrors Macros EC on project
     return null; // replace
   }

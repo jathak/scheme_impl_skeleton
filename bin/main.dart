@@ -7,7 +7,8 @@ import 'package:cs61a_scheme_impl/impl.dart' show StaffProjectImplementation;
 main() async {
   Interpreter interpreter = new Interpreter(new StaffProjectImplementation());
   var lines = stdin.transform(UTF8.decoder).transform(new LineSplitter());
-  interpreter.logger = (Expression e, bool newline) => newline ? print(e) : stdout.write(e);
+  interpreter.logger =
+      (Expression e, bool newline) => newline ? print(e) : stdout.write(e);
   interpreter.onExit = () => exit(0);
   interpreter.importLibrary(new ExtraLibrary());
   addPrimitive(interpreter.globalEnv, const SchemeSymbol("tco"), (e, env) {
