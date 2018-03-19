@@ -6,14 +6,11 @@ This is skeleton code that, when complete, will allow you to build the online
 **Note:** 61A Staff members don't need to use this repo. We have a private staff
 implementation of it in the dart_scheme_impl repo on our GitHub org.
 
-To use, clone [dart_scheme][] and [scheme_web_interpreter][] into a single
-directory. Then, clone this repo into that same directory and call it
-`dart_scheme_impl`.
+See the setup instructions in the [`dart_scheme`][] [contributing guide][].
 
 ```
 mkdir scheme && cd scheme
 git clone git@github.com:Cal-CS-61A-Staff/dart_scheme.git
-git clone git@github.com:Cal-CS-61A-Staff/scheme_web_interpreter.git
 git clone git@github.com:jathak/scheme_impl_skeleton.git dart_scheme_impl
 ```
 
@@ -47,22 +44,8 @@ in the future (if you're a high school student or a current Berkeley student who
 hasn't taken 61A, I won't provide this to you, even if you have no plans to take
 it, just as a precaution).
 
-## Usage
-
-You can run `dart bin/main.dart` to get a CLI interpreter.
-
-You can also build the [scheme_web_interpreter][] app and run in a browser.
-
-There is a suite of Scheme test cases that you can run with
-`dart test/scm.dart`. You can add additional cases to `tests.scm`. Some
-of these tests were written by me, others came from the 61A Scheme
-project, which in turn mostly came from the original SICP textbook.
-
-
-
-
 [dart_scheme]: https://github.com/Cal-CS-61A-Staff/dart_scheme
-[scheme_web_interpreter]: https://github.com/Cal-CS-61A-Staff/scheme_web_interpreter
+[contributing guide]: https://github.com/Cal-CS-61A-Staff/dart_scheme/tree/master/CONTRIBUTING.md
 [Scheme project spec]: http://fa17.cs61a.org/proj/scheme
 [policy]: https://cs61a.org/articles/about.html
 [email]: mailto:jthakar@berkeley.edu

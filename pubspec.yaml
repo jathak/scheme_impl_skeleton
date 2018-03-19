@@ -8,6 +8,3 @@ environment:
 dependencies:
   cs61a_scheme:
     path: ../dart_scheme
-
-executables:
-    dart-scheme: main
