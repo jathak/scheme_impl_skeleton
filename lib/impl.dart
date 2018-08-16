@@ -53,9 +53,8 @@ class StaffProjectImplementation extends ProjectInterface
     throw new SchemeException("Unknown identifier: $symbol");
   }
 
-  // Analagous to PrimitiveProcedure.apply in Problem 4
-  Expression primitiveApply(
-      PrimitiveProcedure proc, PairOrEmpty args, Frame env) {
+  // Analagous to BuiltinProcedure.apply in Problem 4
+  Expression builtinApply(BuiltinProcedure proc, PairOrEmpty args, Frame env) {
     // TODO: Implementation required; mirrors Problem 4 of project
     return null; // replace
   }
